@@ -15,7 +15,7 @@ void BitmapObj::setup(CleytinEngine *engine) {
 
     this->animation = new CEColorBitmapSpriteAnimation();
     animation->setBitmapObject(this);
-    animation->setDuration(8000);
+    animation->setDuration(4500);
     std::vector<const uint16_t *> *frames = new std::vector<const uint16_t *>(
             {
                 sprite_frame_1,
@@ -47,6 +47,7 @@ void BitmapObj::setup(CleytinEngine *engine) {
                 sprite_frame_27,
                 sprite_frame_28,
                 sprite_frame_29,
+                /*
                 sprite_frame_30,
                 sprite_frame_31,
                 sprite_frame_32,
@@ -68,6 +69,7 @@ void BitmapObj::setup(CleytinEngine *engine) {
                 sprite_frame_48,
                 sprite_frame_49,
                 sprite_frame_50
+                */
             }
         );
     animation->setFramesFrom(frames);
