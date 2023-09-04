@@ -14,8 +14,6 @@ void BitmapObj::setup(CleytinEngine *engine) {
     this->setPos(40, 0);
 
     this->animation = new CEColorBitmapSpriteAnimation();
-    animation->setBitmapObject(this);
-
     this->bankIndex = 0;
     this->handle = 0;
 
@@ -80,6 +78,10 @@ void BitmapObj::setupBank(CEColorBitmapSpriteAnimation *animation) {
             (const uint16_t *) (((char *)tmp) + storage_bank_1_frame_35),
         });
         this->animation->setFramesFrom(frames);
+
+        this->setBuffer((const uint16_t *) (((char *)tmp) + storage_bank_1_frame_35));
+        animation->setBitmapObject(this);
+
         delete frames;
     }
 
@@ -96,6 +98,10 @@ void BitmapObj::setupBank(CEColorBitmapSpriteAnimation *animation) {
             (const uint16_t *) (((char *)tmp) + storage_bank_2_frame_41),
         });
         this->animation->setFramesFrom(frames);
+
+        this->setBuffer((const uint16_t *) (((char *)tmp) + storage_bank_2_frame_41));
+        animation->setBitmapObject(this);
+
         delete frames;
     }
 
@@ -112,6 +118,10 @@ void BitmapObj::setupBank(CEColorBitmapSpriteAnimation *animation) {
             (const uint16_t *) (((char *)tmp) + storage_bank_3_frame_47),
         });
         this->animation->setFramesFrom(frames);
+
+        this->setBuffer((const uint16_t *) (((char *)tmp) + storage_bank_3_frame_47));
+        animation->setBitmapObject(this);
+
         delete frames;
     }
 
