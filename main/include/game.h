@@ -4,6 +4,7 @@
 #include "cleytin_engine.h"
 #include "bitmap_obj.h"
 #include "ce_rectangle.h"
+#include "storage.h"
 
 class Game {
 public:
