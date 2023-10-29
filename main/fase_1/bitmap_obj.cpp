@@ -80,7 +80,7 @@ void BitmapObj::setupBank(CEColorBitmapSpriteAnimation *animation) {
         this->animation->setFramesFrom(frames);
 
         this->setBuffer((const uint16_t *) (((char *)tmp) + storage_bank_1_frame_35));
-        animation->setBitmapObject(this);
+        animation->setObject(this);
 
         delete frames;
     }
@@ -100,7 +100,7 @@ void BitmapObj::setupBank(CEColorBitmapSpriteAnimation *animation) {
         this->animation->setFramesFrom(frames);
 
         this->setBuffer((const uint16_t *) (((char *)tmp) + storage_bank_2_frame_41));
-        animation->setBitmapObject(this);
+        animation->setObject(this);
 
         delete frames;
     }
@@ -120,7 +120,7 @@ void BitmapObj::setupBank(CEColorBitmapSpriteAnimation *animation) {
         this->animation->setFramesFrom(frames);
 
         this->setBuffer((const uint16_t *) (((char *)tmp) + storage_bank_3_frame_47));
-        animation->setBitmapObject(this);
+        animation->setObject(this);
 
         delete frames;
     }

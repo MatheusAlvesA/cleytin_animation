@@ -15,7 +15,6 @@ void Game::run(CleytinEngine *engine) {
     engine->addObject(bmp);
 
     while(1) { // Essa 'fase' do game nunca termina
-        engine->loop();
-        engine->render();
+        engine->loopAndRender();
     }
 }
